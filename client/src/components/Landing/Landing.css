@@ -1,0 +1,169 @@
+.cont_land{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background-image: url(https://images.pexels.com/photos/1656666/pexels-photo-1656666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+}
+
+#img_land{
+    height: 120%;
+    width: 100vw;
+}
+
+#but_land{
+    position: relative;
+    z-index: 2;
+    bottom: 400px;
+    right: 60px;
+    font-size: 60px;
+    font-weight: 100;
+    font-style: italic;
+    text-shadow: 0 0 10px rgb(128, 6, 6);
+    background: linear-gradient(rgb(11, 87, 11), white);
+    color: white;
+    text-align: center;
+    border: none;
+    transition: 1s;
+    text-transform: capitalize;
+    height: 30vh;
+    border-radius: 15px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(128, 6, 6);
+
+
+    animation-name: mov;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}   
+
+
+ @keyframes mov {
+    0%{
+        bottom: 450px;
+    }
+
+    50%{
+        bottom: 420px;
+    }
+
+    100%{
+        bottom: 450px;
+    }
+} 
+
+#but_land:hover{
+    transition: all 1s;
+    transform: scale(1.02);
+    background: linear-gradient(white,rgb(11, 87, 11));
+    color: black;
+    text-shadow: 5px 5px 5px #32424a;
+    border-bottom: 3px black outset;
+    border-left: 2px black outset;
+    border-right: 2px black outset;
+
+}
+
+#but_land:hover::after{
+    content: '👨‍🍳';
+}
+
+#beat {
+    position: relative;
+    bottom: 550px;
+    left: 590px;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+    0%{
+        transform: scale(4);
+    }
+    50%{
+        transform: scale(7);
+    }
+    100%{
+        transform: scale(4);
+    }
+    
+}
+
+
+#link_comment {
+    position: relative;
+    bottom: 410px;
+    left: 520px;
+    font-size: 25px;
+    background: burlywood;
+    border: brown outset 3px;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0 0 15px black;
+    box-shadow: 0 0 20px #f5f5f5;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#link_comment:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #01ecd5;
+    font-weight: 400;
+}
+
+#head_land{
+    z-index: 1;
+    background: #f5f5f5;
+    border: double 20px #32424a;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight:900;
+    position: absolute;
+    top: 200px;
+    right: 700px;
+    box-shadow: 2px 2px 2px 2px #01ecd5;
+    text-shadow: 1px 1px 1px #32424a;
+    transition: all 2s;
+    transform: translateX(-651px);
+}
+
+#head_land::after {
+  content: ' ☜';
+  font-size: 150px;
+  font-family: monospace;
+  font-weight: 500;
+  position: absolute;
+  left: 640px;
+  bottom: -10px;
+  text-shadow: 0 0 30px white;
+}
+
+#head_land:hover::after {
+    color: black;
+}
+
+#head_land:hover {
+    background: #32424a;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    box-shadow: 3px 3px 3px 3px #01ecd5;
+    text-shadow: 2px 2px 2px black;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 3px;
+    opacity: 1;
+    transform: translate(0px)
+    
+}

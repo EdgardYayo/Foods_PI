@@ -1,0 +1,135 @@
+.cont_comt{
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#f5f5f5, #32424a);
+    text-shadow: 0 0 4px #01ecd5;
+}
+
+
+#h1_comt {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    
+    animation: space 3s ease infinite;
+}
+
+@keyframes space {
+    0%{ letter-spacing: 2px;}
+    25%{ letter-spacing: 7px; }
+    50%{ letter-spacing: 10px; }
+    75%{ letter-spacing: 7px; }
+    100%{ letter-spacing: 2px; }
+}
+
+.form_comt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: linear-gradient(#f5f5f5, #4586ff);
+    border: outset 3px #32424a99;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 3px black;
+    height: 60vh;
+}
+
+.form_comt textarea {
+    width: 700px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.sect_comt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    bottom: 40px;
+}
+
+#div_comt{
+    background: linear-gradient(#4586ff, #f5f5f5);
+    margin-left: 100px;
+    margin-bottom: 30px;
+    border: outset 4px #32424a99;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px #f5f5f5;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: 1s;
+}
+
+#div_comt:hover {
+    transform: scale(1.2);
+    background: #f5f5f5;
+}
+
+#p_comt{
+    background: linear-gradient(#4586ff, #f5f5f5);
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 120px;
+    border: outset 5px #4586ff;
+    padding: 20px;
+    border-radius:80%;
+    box-shadow: 0 0 10px #f5f5f5;
+}
+
+#div_but {
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-style: oblique;
+    border-radius: 5px;
+}
+
+.butto {
+    background: #32424a;
+    border: outset 2px black;
+    box-shadow: 2px 2px 2px 2px #4586ff;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 2px #4586ff;
+}
+
+.butto:hover {
+    background: #f5f5f5;
+    color: #32424a;
+    transform: scale(1.1);
+}
+
+#img_comt{
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    position: absolute;
+    left: 950px;
+    bottom: 60px;
+    box-shadow: 3px 3px 3px 3px #32424a;
+    border: #4586ff 5px outset;
+    transition: 1s;
+}
+
+#img_comt:hover {
+
+    animation: ship 4s linear infinite;
+}
+
+@keyframes ship {
+    0%{ transform: rotate(160deg); }
+    25%{  transform: rotate(180deg); }
+    50%{  transform: rotate(200deg); }
+    75%{  transform: rotate(180deg); }
+    100%{  transform: rotate(160deg); }
+}
+

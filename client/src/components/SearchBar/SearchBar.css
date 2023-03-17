@@ -1,0 +1,22 @@
+#Bar input{
+    font-size: 18px;
+    font-weight: 25px;
+    margin-top: 10px;
+    border: #32424a 1px outset;
+    border-radius: 5px;
+}
+
+#Bar button {
+    font-size: 18px;
+    font-weight: 25px;
+    background-color: #32424a; 
+    color:  #01ecd5; 
+    text-shadow: 2px 2px 2px gray;
+    border:  #01ecd5 1px outset;
+    border-radius: 5px;
+}
+
+#Bar button:hover {
+    background-color: white;
+    color: #32424a; 
+}

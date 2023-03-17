@@ -1,0 +1,312 @@
+.cont_home {
+    background: linear-gradient(#32424a, white);
+    overflow-y: hidden;
+    width: 100vw;
+}
+
+.recipes_home {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+#cont_card {
+    border: outset 2px #32424a;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 0 0 10px black;
+    background: linear-gradient(#01ecd5, #f5f5f5);
+
+}
+
+#cont_card:hover {
+    border:none;
+    border-bottom: 2px outset #32424a;
+    transform: translateY(-5px);
+}
+
+#but_hom {
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 3px;
+    background: #32424a;
+    border: 3px double #01ecd5;
+    color: #01ecd5;
+    text-shadow: 1px 1px 1px #f5f5f5;
+    opacity: 1;
+    padding: 6px;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+#but_hom:hover {
+    transition: 1s;
+    opacity: 1;
+    transform: scale(1.1);
+    background: #f5f5f5;
+    color: black;
+}
+
+#but_hom:hover::after {
+    content: "⇥";
+}
+
+#but_back {
+    background-color: #01ecd5;
+    border: transparent;
+    position: relative;
+    right: 500px;
+    bottom: 40px;
+    font-size: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #32424a;
+    border-radius: 30%;
+
+    animation: butmov2 2s linear infinite;
+}
+
+@keyframes butmov2 {
+    0% {
+        bottom: 74px;
+    }
+
+    50% {
+        bottom: 69px;
+    }
+
+    100% {
+        bottom: 74px;
+    }
+}
+
+#but_back:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    background: #32424a;
+}
+
+#but_back:hover::after {
+    content: 'Back';
+    border: 1px solid black;
+    font-size: 25px;
+    font-style: italic;
+    font-family: monospace;
+    padding: 3px;
+    position: absolute;
+    bottom: 58px;
+    right: -5px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 20px #01ecd5;
+}
+
+#refresh {
+    background-color: #01ecd5;
+    border: transparent;
+    position: relative;
+    right: 550px;
+    bottom: 75px;
+    font-size: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #32424a;
+    border-radius: 30%;
+
+    animation: butmov 2s linear infinite;
+}
+
+@keyframes butmov {
+    0% {
+        bottom: 75px;
+    }
+
+    50% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 75px;
+    }
+}
+
+
+#refresh:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    background: #32424a;
+}
+
+#refresh:hover::after {
+    content: ' Refresh';
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: monospace;
+    font-style: italic;
+    padding: 3px;
+    position: absolute;
+    bottom: 58px;
+    right: -15px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 20px #01ecd5;
+}
+
+#create_home {
+    background-color: #01ecd5;
+    border: transparent;
+    position: relative;
+    left: 500px;
+    top: 30px;
+    font-size: 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #32424a;
+    border-radius: 30%;
+
+    animation: grow 2s infinite linear;
+}
+
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#create_home:hover {
+    opacity: 1;
+    background: #32424a;
+    color: #f5f5f5;
+}
+
+#fav_hom-but {
+    position: relative;
+    left: 170px;
+    top: 5px;
+    color: #f5f5f5;
+    background: #4586ff;
+    border: outset #32424a;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0.5px #01ecd5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#fav_hom-but:hover {
+    background-color: #01ecd5;
+    color: #32424a;
+}
+
+#p_hom {
+    font-size: 50px;
+    letter-spacing: 1vw;
+    font-weight: 100;
+    font-style: italic;
+    background: url(https://th.bing.com/th/id/R.86bdf35c21cdb8eee48c8a2e94b67af0?rik=48bF4%2blcg3iqVg&pid=ImgRaw&r=0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #32424a;
+
+
+    animation: shine 12s infinite linear
+}
+
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 200%;
+    }
+
+}
+
+#nav_hom {
+    position: relative;
+    left: 280px;
+}
+
+#fruit_hom {
+    font-size: 80px;
+    white-space: nowrap;
+    width: 18ch;
+    position: relative;
+    left: 250px;
+
+    animation: typing 8s steps(20) infinite,
+        close .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes close {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#down {
+    position: relative;
+    top: 575px;
+    left: 534px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #01ecd5;
+    border: transparent;
+    box-shadow: 2px 2px 2px 2px #32424a;
+}
+
+#down:hover {
+    transform: scale(1.1);
+    color: #f5f5f5;
+}
+
+#down:hover::after {
+    content: 'Scroll';
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: 400;
+    font-style: italic;
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+    color: black;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 20px #01ecd5;
+}
+
+#nf_home {
+    position: relative;
+    left: 200px;
+}
+
+#nf_home h1 {
+    position: relative;
+    bottom: 70px;
+    right: 80px;
+}

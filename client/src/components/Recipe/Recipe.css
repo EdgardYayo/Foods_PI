@@ -1,0 +1,48 @@
+#img_rec{
+ border-radius: 30%;
+ box-shadow: 3px 3px 3px 3px gray;
+ margin-top: 10px;
+ width: 300px;
+ height: 250px;
+
+ animation: beat2 3s ease-in-out infinite;
+}
+
+@keyframes beat2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+
+#name_rec{
+    text-shadow: 0 0 3px black;
+    font-style: italic;
+}
+
+#diet_rec{
+    font-weight:100;
+    font-size: 18px;
+    background: linear-gradient(#4586ff, #32424a, #f5f5f5); 
+    color: #f5f5f5; 
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-shadow: 0 0 3px black;
+    padding: 4px;
+    box-shadow: 0 0 8px black;
+}
+
+#sco_rec{
+    font-size: 18px;
+    font-weight:500;
+    text-shadow: 0 0 2px #4586ff;
+    text-decoration:overline;
+}

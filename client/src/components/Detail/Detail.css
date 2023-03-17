@@ -1,0 +1,142 @@
+.cont_detail {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background:linear-gradient(#f5f5f5,#4586ff);
+    overflow-x: hidden;
+
+}
+
+#img_det {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px black;
+    position: relative;
+    top: 15px;
+    width: 600px;
+    height: 400px;
+
+
+    animation-name: img;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img {
+    0% {
+        transform: scale(0.8)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+#list_det {
+    list-style: none;
+    text-align: justify;
+}
+
+#list_det strong {
+    display: grid;
+    place-items: center;
+}
+
+#name_det {
+    font-size: 50px;
+    text-shadow: 0 0 4px white;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration: underline dotted white;
+}
+
+#sec_det {
+    border: outset 10px black;
+    font-size: 20px;
+    font-style: italic;
+    background: linear-gradient(#f5f5f5, #32424a);
+    border-radius: 20px;
+    text-shadow: 0 0 3px white;
+    padding: 6px;
+    opacity: 0.9;
+}
+
+#sec_det li {
+    position: relative;
+    right: 10px;
+}
+
+#but_det {
+    width: 200px;
+    background-color: #32424a;
+    color: #01ecd5;
+    border: 2px #01ecd5 outset;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    text-shadow: 2px 2px 2px gray;
+    font-weight: 700;
+}
+
+#but_det:hover {
+    transform: scale(1.1);
+    background-color: #f5f5f5;
+    color: #32424a;
+
+}
+
+#del_det {
+    width: 200px;
+    background-color: #32424a;
+    color: #01ecd5;
+    border: 2px #01ecd5 outset;
+    font-size: 25px;
+    position: relative;
+    left: 550px;
+    bottom: 30px;
+    text-shadow: 2px 2px 2px gray;
+    font-weight: 700;
+}
+
+#del_det:hover {
+    transform: scale(1.1);
+    background-color: red;
+    border-color: #32424a;
+    color: #32424a;
+}
+
+#del_det:hover::after {
+    content: '✘';
+    margin-left: 3px;
+}
+
+#p_det {
+    font-size: 50px;
+    border: #32424a 10px double;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 2px 2px 2px 2px #32424a;
+    font-weight:100;
+    padding: 10px 10px 20px 20px;
+    text-shadow: 2px 2px 2px #32424a;
+
+
+    animation: chan 5s ease infinite;
+}
+
+@keyframes chan {
+    0%{
+        background-color: #f5f5f5;
+    }
+    50%{
+        background-color: #4586ff;
+        color: white;
+    }
+    100%{
+        background-color: #f5f5f5;
+    }
+}

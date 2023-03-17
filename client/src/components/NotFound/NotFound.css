@@ -1,0 +1,21 @@
+#h1_nf{
+    font-size: 40px;
+    color: #4586ff;
+    text-shadow: 4px 4px 4px #32424a;
+    position: relative;
+    left: 310px;
+    top:80px;
+    z-index: 1;
+}
+
+#img_nf{
+ height: 100%;
+ width: 140%;
+ border-radius: 80%;
+ position: relative;
+ bottom: 130px;
+ left: 10px;
+ border-top-left-radius: 10%;
+ border-top-right-radius: 10%;
+
+}

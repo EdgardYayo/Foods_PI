@@ -1,0 +1,33 @@
+.nav_nav {
+    color:  #01ecd5;  
+    text-shadow: 2px 2px 2px gray;
+    display: inline-flex;
+}
+
+.nav_nav select {
+    margin-left: 5px;
+    background: linear-gradient(#01ecd5, #f5f5f5); 
+    color:  black; 
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 2px;
+    border: black double;
+    font-family:monospace;
+}
+
+#but_fav-nav{
+    background: linear-gradient(#4586ff, #f5f5f5);
+    color: black;
+    font-size: 18px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 3px;
+    border: black double;
+    font-family: monospace;
+}
+
+#but_fav-nav:hover{
+    background-color: #f5f5f5;
+    color: #32424a;
+}
+
