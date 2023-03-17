@@ -1,5 +1,14 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+
+# Images 
+
+![image](https://user-images.githubusercontent.com/108090188/225819279-d9a82b72-f19a-40d7-af93-2f1afd6e7ed4.png)
+![image](https://user-images.githubusercontent.com/108090188/225819324-47a46db2-7880-4184-ac77-42ee7b34e563.png)
+![image](https://user-images.githubusercontent.com/108090188/225819381-d96861f5-7dd5-43ba-8f5f-f62a4ad80d46.png)
+![image](https://user-images.githubusercontent.com/108090188/225819524-c3309b8d-7258-417a-a59e-09f41be0978d.png)
+
+
 # Individual Project - Henry Food
 
 <p align="right">
